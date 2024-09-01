@@ -5,11 +5,60 @@ h3 {
     font-size: 100x;
     color: azure;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.front-Img img{
+    width: 200px;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.container:hover .overlay {
+    width: 100%;
+}
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 50%;    
+}
+
+.grid_dad {
+    display: flex;
+    width: 100%;
+}
+
 .button-group .button{
     padding: 10px 20px; 
     border: 1px solid black; 
-    background-color: #136a13; 
-    color: #fff; 
+    background-color: #dae0da; 
+    color:#000000; 
     text-align: center; 
     text-decoration: none; 
     font-size: 16px; 
@@ -24,20 +73,6 @@ h3 {
 .button:hover { 
     background-color: #2980b9; 
 } 
-/*
-.button {
-    background-color: #000000;
-    color: white;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 15%;
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-}
-*/
 table {
     width: 100%;
     border: 0;
