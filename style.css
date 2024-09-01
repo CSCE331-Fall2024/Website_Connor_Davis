@@ -14,6 +14,10 @@ h2 {
     position: relative;
     width: 100%;
 }
+.port-Img img{
+    width: 50%;
+    height: auto;
+}
 
 .front-Img img{
     width: 75%;
@@ -31,7 +35,7 @@ h2 {
     transition: .5s ease;
 }
 .container:hover .overlay {
-    width: 100%;
+    width: 50%;
 }
 .text {
     white-space: nowrap; 
@@ -62,8 +66,8 @@ h2 {
 .button-group .button{
     padding: 10px 20px; 
     border: 1px solid black; 
-    background-color: #dae0da; 
-    color:#000000; 
+    background-color: #6F5B3E; 
+    color:#F9F6F0; 
     text-align: center; 
     text-decoration: none; 
     font-size: 16px; 
@@ -89,3 +93,29 @@ td {
 tr {
     text-align: center;
 }
+
+.row {
+    margin: 8px -16px;
+  }
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 35%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
