@@ -15,7 +15,7 @@ h2 {
     width: 100%;
 }
 .port-Img img{
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -37,6 +37,21 @@ h2 {
 .container:hover .overlay {
     width: 50%;
 }
+
+.full_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6f5b3e;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.container:hover .full_overlay {
+    width: 100%;
+}
 .text {
     white-space: nowrap; 
     color: white;
@@ -47,6 +62,12 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.text_b {
+    font-size: 20px;
+    color: #F9F6F0;
+    overflow: visible;
 }
 
 .grid-container {
