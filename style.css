@@ -9,6 +9,10 @@ h2 {
     font-size: 30px;
     color: #171515;
 }
+h1 {
+    font-size: 25px;
+    color: #171515;
+}
 
 .container {
     position: relative;
@@ -20,8 +24,8 @@ h2 {
 }
 
 .front-Img img{
-    width: 75%;
-    height: auto;
+    width: 500;
+    height: 400;
 }
 .overlay {
     position: absolute;
