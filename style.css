@@ -1,9 +1,13 @@
 body{
-    background-color: maroon;   
+    background-color: beige;   
 }
 h3 {
-    font-size: 100x;
-    color: azure;
+    font-size: 50px;
+    color: #171515;
+}
+h2 {
+    font-size: 30px;
+    color: #171515;
 }
 
 .container {
@@ -12,7 +16,7 @@ h3 {
 }
 
 .front-Img img{
-    width: 200px;
+    width: 75%;
     height: auto;
 }
 .overlay {
@@ -20,7 +24,7 @@ h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #6f5b3e;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -46,12 +50,13 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 10px;
-    width: 50%;    
+    width: 50%;
 }
 
 .grid_dad {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .button-group .button{
