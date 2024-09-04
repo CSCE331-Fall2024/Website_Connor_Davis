@@ -6,8 +6,9 @@
 <script> 
   function toggleTheme() {  
       var theme = document.getElementsByTagName('link')[0]; 
-
-      if (theme.getAttribute('href') == 'style.css') {
+      // var value = localStorage.getItem('href');
+      
+      if (theme.getAttribute('href') === 'style.css') {
           // var val = 0; 
           localStorage.setItem('href', 'style2.css');
           theme.setAttribute('href', 'style2.css'); 
@@ -17,14 +18,31 @@
           theme.setAttribute('href', 'style.css'); 
       }
       // localStorage.setItem('pageStyle', val); 
-  } 
+  }
+  function loadTheme() {  
+    var value = localStorage.getItem('href');
+    var theme = document.getElementsByTagName('link')[0];
+
+      if (value === 'style2.css') {
+          // alert(value);
+          localStorage.setItem('href', 'style2.css');
+          theme.setAttribute('href', 'style2.css'); 
+      } else { 
+          localStorage.setItem('href', 'style.css');
+          theme.setAttribute('href', 'style.css'); 
+      }
+      // localStorage.setItem('pageStyle', val); 
+  }
 </script> 
 </head>
-<link id="origin" rel="stylesheet" href="style2.css"/>
+
+
+<link id="origin" rel="stylesheet" href="style.css"/>
+<body onload="loadTheme()">
 <!-- <link id="change" rel="stylesheet" href="style2.css" class="alternate"/> -->
 <!-- <link id="origin" rel="stylesheet" href="style.css"/> -->
 
-<body>
+
 <div class="hero-image">
 
 <table>

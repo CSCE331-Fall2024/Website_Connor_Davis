@@ -3,9 +3,22 @@
 <head>
 <title>TEST</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script>
+  function toggleTheme() {
+    var value = localStorage.getItem('href');
+    var theme = document.getElementsByTagName('link')[0]; 
+        if(value == "style.css"){
+          localStorage.setItem('value', 'style.css');
+          theme.setAttribute('href', 'style.css');
+        } else {
+          localStorage.setItem('value', 'style2.css');
+          theme.setAttribute('href', 'style2.css');
+        }
+    };
+    </script>
 </head>
-<link rel="stylesheet" href="style.css"/>
-<body>
+<link rel="stylesheet" href/>
+<body onload="toggleTheme()">
   <table>
     <tr>
       <td><h3>Service and Social Contributions</h3></td>

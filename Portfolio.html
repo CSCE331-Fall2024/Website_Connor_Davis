@@ -4,18 +4,22 @@
 <title>Portfolio</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script>
-  window.onload = function() {
+function toggleTheme() {
   var value = localStorage.getItem('href');
-  if(pageStyle == 0){
-    theme.setAttribute('href', 'style2.css');
-  } else {
-    theme.setAttribute('href', 'style2.css');
-  }
+  var theme = document.getElementsByTagName('link')[0]; 
+      if(value == "style.css"){
+        localStorage.setItem('value', 'style.css');
+        theme.setAttribute('href', 'style.css');
+      } else {
+        localStorage.setItem('value', 'style2.css');
+        theme.setAttribute('href', 'style2.css');
+      }
   };
   </script>
 </head>
+
+<body onload="toggleTheme()">
 <link rel="stylesheet" href/>
-<body>
   <h3>PORTFOLIO</h3>
 <h1>Below is a list of relevant programming projects and a brief description of the tools used, the function of the project, and the environments in which they were developed.</h1>
 
