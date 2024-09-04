@@ -1,11 +1,31 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>TEST</title>
+<title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script> 
+  function toggleTheme() {  
+      var theme = document.getElementsByTagName('link')[0]; 
+
+      if (theme.getAttribute('href') == 'style.css') {
+          // var val = 0; 
+          localStorage.setItem('href', 'style2.css');
+          theme.setAttribute('href', 'style2.css'); 
+      } else { 
+          // var val = 1;
+          localStorage.setItem('href', 'style.css');
+          theme.setAttribute('href', 'style.css'); 
+      }
+      // localStorage.setItem('pageStyle', val); 
+  } 
+</script> 
 </head>
-<link rel="stylesheet" href="style.css"/>
+<link id="origin" rel="stylesheet" href="style2.css"/>
+<!-- <link id="change" rel="stylesheet" href="style2.css" class="alternate"/> -->
+<!-- <link id="origin" rel="stylesheet" href="style.css"/> -->
+
 <body>
+<div class="hero-image">
 
 <table>
   <tr>
@@ -15,6 +35,8 @@
     <td><h2>My name is Connor Davis and I am a junior at Texas A&M in the Computer Science degree program.</h2></td>
   </tr>
 </table>
+
+<div class="soup"><button onclick="toggleTheme()">Switch</button> </div>
 
 <div class="grid_dad">
   <div class="grid-container">
@@ -54,6 +76,7 @@
 </div>
 
 
+</div> <!--end hero image-->
 </body>
 
 </html>
