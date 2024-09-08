@@ -19,14 +19,26 @@ function toggleTheme() {
 </head>
 
 <body onload="toggleTheme()">
-<link rel="stylesheet" href/>
-  <h3>PORTFOLIO</h3>
-<h1>Below is a list of relevant programming projects and a brief description of the tools used, the function of the project, and the environments in which they were developed.</h1>
 
+  <div class="button-group"> 
+    <a href="index.html">
+    <button class="button">Home</button> </a>
+    <a href="Qualifications.html">
+      <button class="button">Qualifications</button> </a>
+    <a href="Service.html">
+      <button class="button">Service</button> </a>
+    <a href="Chat-GPT.html">
+        <button class="button">Chat-GPT</button> </a>
+  </div>
+
+<link rel="stylesheet" href/>
+  <h3><br>PORTFOLIO</h3>
+<h1>Below is a list of relevant programming projects and a brief description of the tools used, the function of the project, and the environments in which they were developed.</h1>
+<div class="scroll-container">
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="BJC.jpg" alt="Mountains" style="width:100%">
+      <img src="BJC.jpg" alt="Mountains" class="Page2Img">
       <h3>Aggie BlackJack</h3>
       <p>During the 2023 Howdy Hack Hackathon competition hosted by A&M, I partnered with another developer to create a web browser game of blackjack. 
         This version of blackjack had completely custom assets that were designed to show A&M traditions or references to the campus culture
@@ -43,7 +55,7 @@ function toggleTheme() {
   </div>
   <div class="column">
     <div class="content">
-    <img src="SECC.png" alt="Lights" style="width:100%">
+    <img src="SECC.png" alt="Lights" class="Page2Img">
       <h3>SecuroChat</h3>
       <p>SecuroChat was a full stack development project I worked on with a group of developers for the Aggie Coding Club in 2023. This application 
         was designed as a messaging app supporting end-to-end encryption and a database to store and facilitate message sending. This project was
@@ -60,8 +72,9 @@ function toggleTheme() {
 <div class="row">
   <div class="column">
     <div class="content">
-    <img src="Sched.png" alt="Nature" style="width:100%">
-      <h3>Homework Scheduler</h3>
+    <!-- <div class="Page2Img"><img src="Sched.png" alt="Nature" style="width:100%"></div> -->
+    <img src="Sched.png" alt="Nature" class="Page2Img">  
+    <h3>Homework Scheduler</h3>
       <p>This project was a simple scheduling app that was designed to send system notifications and an email to users whenever an event they entered was
         tiggered. Written in 2020 during my senior year of highschool this project is entirely written in C# in visual studio.</p>
       <a href="https://github.com/dsdguy100/PartC"><p>GitHub Link</p></a>
@@ -69,7 +82,7 @@ function toggleTheme() {
   </div>
   <div class="column">
     <div class="content">
-    <img src="WebDev.png" alt="Mountains" style="width:100%">
+    <img src="WebDev.png" alt="Mountains" class="Page2Img">
       <h3>This Website</h3>
       <p>Written in 2024 using nothing but HTML and CSS for the layouts with a little bit of javascript to enable changing between visual styles, this website
         is intended to show off my achievements and experience in software development all in one centralized project.
@@ -77,10 +90,6 @@ function toggleTheme() {
     </div>
   </div>
 </div>
-
-<div class="button-group"> 
-  <a href="index.html">
-  <button class="button">Home</button> </a>
 </div>
 </body>
 
