@@ -1,16 +1,19 @@
 body{
     background-color: beige;   
 }
+
 h3 {
     font-size: 50px;
     color: #171515;
     text-align: center;
 }
+
 h2 {
     font-size: 30px;
     color: #171515;
     text-align: center;
 }
+
 h1 {
     font-size: 25px;
     color: #171515;
@@ -20,6 +23,7 @@ h1 {
     position: relative;
     width: 100%;
 }
+
 .port-Img img{
     width: 100%;
     height: auto;
@@ -46,6 +50,7 @@ h1 {
     height: 100%;
     transition: .5s ease;
 }
+
 .container:hover .overlay {
     width: 50%;
 }
@@ -61,9 +66,11 @@ h1 {
     height: 100%;
     transition: .5s ease;
 }
-.container:hover .full_overlay {
+
+.container:hover .full-overlay {
     width: 100%;
 }
+
 .text {
     white-space: nowrap; 
     color: white;
@@ -90,7 +97,7 @@ h1 {
     width: 50%;
 }
 
-.grid_dad {
+.grid-parent {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -115,14 +122,17 @@ h1 {
 .button:hover { 
     background-color: #2980b9; 
 } 
+
 table {
     width: 100%;
     border: 0;
 }
+
 td {
     align-items: center;
     color:#000000;
 }
+
 tr {
     text-align: center;
 }

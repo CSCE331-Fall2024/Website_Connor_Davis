@@ -3,53 +3,42 @@
 <head>
 <title>Home</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
 <script> 
   function toggleTheme() {  
       var theme = document.getElementsByTagName('link')[0]; 
-      // var value = localStorage.getItem('href');
       
       if (theme.getAttribute('href') === 'style.css') {
-          // var val = 0; 
           localStorage.setItem('href', 'style2.css');
           theme.setAttribute('href', 'style2.css'); 
       } else { 
-          // var val = 1;
           localStorage.setItem('href', 'style.css');
           theme.setAttribute('href', 'style.css'); 
       }
-      // localStorage.setItem('pageStyle', val); 
   }
   function loadTheme() {  
     var value = localStorage.getItem('href');
     var theme = document.getElementsByTagName('link')[0];
 
       if (value === 'style2.css') {
-          // alert(value);
           localStorage.setItem('href', 'style2.css');
           theme.setAttribute('href', 'style2.css'); 
       } else { 
           localStorage.setItem('href', 'style.css');
           theme.setAttribute('href', 'style.css'); 
       }
-      // localStorage.setItem('pageStyle', val); 
   }
 </script> 
 </head>
 
-
 <link id="origin" rel="stylesheet" href="style.css"/>
 <body onload="loadTheme()">
-<!-- <link id="change" rel="stylesheet" href="style2.css" class="alternate"/> -->
-<!-- <link id="origin" rel="stylesheet" href="style.css"/> -->
-
 
 <div class="hero-image">
-
   <h3>HOWDY!!</h3>
   <h2>My name is Connor Davis and I am a junior at Texas A&M in the Computer Science degree program.</h2></td>
 
-
-<div class="grid_dad">
+<div class="grid-parent">
   <div class="grid-container">
     <a href="Portfolio.html">
     <div class="container">
@@ -59,6 +48,7 @@
       </div>
     </div>
     </a>
+
     <a href="Qualifications.html">
     <div class="container">
       <div class="front-Img"><img src="skills.avif" alt="Avatar"></div>
@@ -67,6 +57,7 @@
       </div>
     </div>
     </a>
+
     <a href="Service.html">
     <div class="container">
       <div class="front-Img"><img src="yeeehaw.jpg" alt="Avatar"></div>
@@ -75,6 +66,7 @@
       </div>
     </div>
     </a>
+
     <a href="Chat-GPT.html">
     <div class="container">
       <div class="front-Img"><img src="Revolt.jpg" alt="Avatar"></div>
@@ -83,11 +75,12 @@
       </div>
     </div>
     </a>
+
   </div>
 </div>
 
 <div class="transit"><button onclick="toggleTheme()">Switch</button> </div>
-</div> <!--end hero image-->
+</div>
 </body>
 
 </html>
