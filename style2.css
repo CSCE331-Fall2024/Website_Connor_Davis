@@ -72,10 +72,7 @@ h3 {
     /* background-color: #2980b9;
     border-color: black;
     border-width: 5px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center; */
+    */
     outline-width: 20px;
     outline-color: aliceblue;
 }
@@ -86,6 +83,7 @@ h3 {
     justify-items: center;
     color: aliceblue;
 }
+
 .overlay{
     align-items: center;
     align-content: center;
@@ -93,14 +91,46 @@ h3 {
     justify-items: center;
 }
 
+.full-overlay:hover {
+    border: 1px solid #777;
+}
+
+.text_b {
+    font-size: 20px;
+    color: #F9F6F0;
+    overflow: visible;
+}
+
+.text_b:hover {
+    font-size: 25px;
+    color: lime;
+    overflow: visible;
+}
+
 .front-Img {
     display: none;
 }
 
-.soup { 
+.service-Img img{
+    width: 500;
+    height: 400;
+}
+
+.service-Img img:hover{
+    filter: brightness(125%);
+    /* width: 600;
+    height: 500; */
+}
+
+.transit { 
     position: fixed; 
     top: 10px; 
     right: 10px;
+}
+
+.transit button {
+    background-color: #001861;
+    color: white;
 }
 
 .scroll-container {
@@ -167,13 +197,20 @@ h3 {
     float: left; 
 }
 
+
+.button:hover {
+    filter: brightness(110%);
+}
 .button-group {
     width: 100%;
 }
 
-
 .content p {
     color: white;
+}
+
+.content a p:hover {
+    color: lightblue;
 }
 
 .port-Img img{
@@ -185,7 +222,7 @@ h3 {
     border-radius: 50px;
 }
 .overlay {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -193,10 +230,18 @@ h3 {
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5s ease;
+    transition: .5s ease; */
 }
 .container:hover .overlay {
     width: 0%;
+}
+
+.container:hover .text {
+    color: lightblue;
+}
+
+.grid-container:hover{
+    filter: brightness(125%);
 }
 
 .table {

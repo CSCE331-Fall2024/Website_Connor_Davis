@@ -3,140 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Designing Good Websites</title>
+    <title>Prompt Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            text-align: center;
             margin: 0;
-            padding: 0;
-            color: #333;
+            padding: 20px;
             background-color: #f4f4f4;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
         .container {
-            width: 80%;
+            max-width: 600px;
             margin: 0 auto;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        section {
-            margin: 20px 0;
-            padding: 20px;
             background: #fff;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background: #333;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
             color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Designing Good Websites</h1>
-        <nav>
-            <ul>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#usability">Usability</a></li>
-                <li><a href="#design">Design Principles</a></li>
-                <li><a href="#accessibility">Accessibility</a></li>
-                <li><a href="#performance">Performance</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="container">
-        <section id="intro">
-            <h2>Introduction</h2>
-            <p>This page of the website was designed entirely by ChatGPT with the only change being an added home button at the end.</p><p>Designing a good website involves a combination of aesthetics, functionality, and user experience. A well-designed website is not only visually appealing but also easy to navigate, accessible, and fast-loading.</p>
-        </section>
-        
-        <section id="usability">
-            <h2>Usability</h2>
-            <p>Usability refers to how easy and intuitive it is for users to interact with your website. Key principles include:</p>
-            <ul>
-                <li>Clear navigation and layout</li>
-                <li>Consistent design elements</li>
-                <li>Effective use of headings and subheadings</li>
-                <li>Search functionality</li>
-            </ul>
-        </section>
-        
-        <section id="design">
-            <h2>Design Principles</h2>
-            <p>Good design is crucial for engaging users and creating a positive experience. Important design principles include:</p>
-            <ul>
-                <li>Visual hierarchy: Using size, color, and spacing to guide users' attention</li>
-                <li>Color theory: Choosing a color palette that reflects your brand and is visually appealing</li>
-                <li>Typography: Selecting readable and aesthetically pleasing fonts</li>
-                <li>Responsive design: Ensuring your site looks good on all devices</li>
-            </ul>
-        </section>
-        
-        <section id="accessibility">
-            <h2>Accessibility</h2>
-            <p>Ensuring your website is accessible to all users, including those with disabilities, is essential. Consider the following:</p>
-            <ul>
-                <li>Alternative text for images</li>
-                <li>Keyboard navigability</li>
-                <li>Color contrast for readability</li>
-                <li>Accessible forms and interactive elements</li>
-            </ul>
-        </section>
-        
-        <section id="performance">
-            <h2>Performance</h2>
-            <p>A fast-loading website improves user experience and SEO. To enhance performance:</p>
-            <ul>
-                <li>Optimize images and multimedia</li>
-                <li>Minimize HTTP requests</li>
-                <li>Use caching effectively</li>
-                <li>Implement a content delivery network (CDN)</li>
-            </ul>
-        </section>
-        
-        <section id="resources">
-            <h2>Resources</h2>
-            <p>Here are some useful resources for designing and developing good websites:</p>
-            <ul>
-                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
-                <li><a href="https://www.web.dev/" target="_blank">Web.dev by Google</a></li>
-                <li><a href="https://a11yproject.com/" target="_blank">The A11Y Project</a></li>
-            </ul>
-        </section>
+        <h1>Prompt Page</h1>
+        <p>Make me an HTML website page that includes this prompt and a button that returns to the page "index.html".</p>
+        <a href="index.html" class="button">Return to Index</a>
+        <div class="disclaimer">
+            <p>Disclaimer: This webpage was designed by ChatGPT.</p>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-    <div class="button-group"> 
-      <a href="index.html">
-      <button class="button">Home</button> </a>
-    </div>
-  </body>
+</body>
 </html>
-  

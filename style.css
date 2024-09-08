@@ -4,10 +4,12 @@ body{
 h3 {
     font-size: 50px;
     color: #171515;
+    text-align: center;
 }
 h2 {
     font-size: 30px;
     color: #171515;
+    text-align: center;
 }
 h1 {
     font-size: 25px;
@@ -27,6 +29,12 @@ h1 {
     width: 500;
     height: 400;
 }
+
+.service-Img img{
+    width: 500;
+    height: 400;
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -42,7 +50,7 @@ h1 {
     width: 50%;
 }
 
-.full_overlay {
+.full-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -145,14 +153,15 @@ tr {
     padding: 10px;
   }
 
-.soup { 
+.transit { 
     position: fixed; 
     top: 10px; 
     right: 10px;
+}
 
-    .button {
-        background-color: rgb(149, 228, 200);
-    }
+.transit button {
+    background-color: #6F5B3E;
+    color: white;
 }
 
 .Page2Img {
